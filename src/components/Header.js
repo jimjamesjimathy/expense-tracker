@@ -1,7 +1,7 @@
-import React from 'react'
+import './Header.scss';
 
 export const Header = () => {
     return (
-        <h2>Expense Tracker</h2>
+        <h1 className='title'>Expense Tracker</h1>
     )
 }

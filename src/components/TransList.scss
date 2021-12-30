@@ -1,0 +1,86 @@
+.transList {
+    flex: 3;
+    width: 92%;
+    overflow-x: hidden;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        height: 85%;
+        width: 75%;
+        margin: auto;
+        list-style: none;
+        border: 1px solid black;
+
+        h3 {
+            width: 100%;
+            border-bottom: 1px solid black;
+            color: #0B090B;
+            background-color: #5CA6EB;
+            font-weight: 400;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .minus {
+            background-color: #FDDBD8;
+            border-right: 3.5px solid #E3170A;
+        }
+        .plus {
+            background-color: #DCF9DE;
+            border-right: 3.5px solid #157F1F;
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            border-bottom: 1px solid black;
+            transition: all 750ms ease;
+
+
+            div {
+                width: 35%;
+                color: #2D252D;
+                font-weight: 500;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+            span {
+                color: #2D252D;
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+
+                .delete-btn {
+                    position: absolute;
+                    height:100%;
+                    width:0;
+                    left: 0;
+                    opacity: 0;
+                    border: 0;
+                    color: #fff;
+                    background-color: #E3170A;
+                    transition: all 550ms ease;
+
+                    &:hover {
+                        color: #000;
+                        background-color: #fd5c51;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: #F8F0DE;
+
+                .delete-btn {
+                    opacity: 1;
+                    width: 45px;
+                }
+            }
+        }
+    }
+}

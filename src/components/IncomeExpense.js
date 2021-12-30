@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
+import './IncomeExpense.scss';
 
 //Money formatter function
 function moneyFormatter(num) {
@@ -32,14 +33,14 @@ export const IncomeExpense = () => {
   );
 
   return (
-    <div>
+    <div className='income-expense'>
         <div>
-          <h4>Income</h4>
-  <p>{moneyFormatter(income)}</p>
+          <h4>income</h4>
+          <p className={income < 0 ? 'negative' : 'positive'}> + {moneyFormatter(income)}</p>
         </div>
         <div>
-          <h4>Expense</h4>
-  <p>{moneyFormatter(expense)}</p>
+          <h4>expenses</h4>
+          <p className={expense > 0 ? 'negative' : ''}> - {moneyFormatter(expense)}</p>
         </div>
       </div>
   )

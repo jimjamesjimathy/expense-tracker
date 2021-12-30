@@ -24,7 +24,9 @@ export const Transaction = ({ transaction }) => {
 
   return (
     <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
-      {transaction.text} <span>{sign}{moneyFormatter(transaction.amount)}</span><button onClick={() => deleteTransaction(transaction.id)}>x</button>
+      <div>
+      {`${transaction.text}: `} <span>{sign}{moneyFormatter(transaction.amount)}</span><button className='delete-btn' onClick={() => deleteTransaction(transaction.id)}><i className="fas fa-trash-alt"></i></button>
+      </div>
     </li>
   )
 }

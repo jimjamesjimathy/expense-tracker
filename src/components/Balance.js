@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
+import './Balance.scss';
 
 //Money formatter function
 function moneyFormatter(num) {
@@ -19,15 +20,13 @@ function moneyFormatter(num) {
 
 export const Balance = () => {
   const { transactions } = useContext(GlobalContext);
-
   const amounts = transactions.map(transaction => transaction.amount);
-
   const total = amounts.reduce((acc, item) => (acc += item), 0);
 
   return (
-    <>
-      <h4>Your Balance</h4>
-    <h1>{moneyFormatter(total)}</h1>
-    </>
+    <div className='balance'>
+      <h4>current balance: </h4>
+    <h1 className={total < 0 ? 'negative' : 'positive'}>{moneyFormatter(total)}</h1>
+    </div>
   )
 }

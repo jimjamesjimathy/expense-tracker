@@ -1,0 +1,33 @@
+.income-expense {
+    flex: .3;
+    width: 92%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div{
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+    h4 {
+        color: #0B090B;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    p {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    .negative {
+        color: #E3170A;
+    }
+    .positive {
+        color: #157F1F;
+    }
+
+    }
+}

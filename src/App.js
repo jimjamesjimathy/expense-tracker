@@ -7,11 +7,11 @@ import { AddTrans } from './components/AddTrans';
 import { GlobalProvider } from './context/GlobalState';
 
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <GlobalProvider>
+    <GlobalProvider className='home-page'>
       <Header />
       <div className='container'>
         <Balance />

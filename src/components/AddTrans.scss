@@ -1,0 +1,64 @@
+.addTrans {
+    height: 35%;
+    width: 92%;
+    padding-bottom: 2%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .add-title {
+        width: 45%;
+        color: #2D252D;
+        background-color: #5CA6EB;
+        border: 1px solid #0B090B;
+        text-align: center;
+        line-height: 1;
+        text-align: center;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+    
+        .instructions {
+            margin-top: 7px;
+            letter-spacing: -1px;
+            font-style: italic;
+            color: #4F404F;
+        }
+    }
+
+    form {
+        height: 75%;
+        width: 45%;
+        color: #2D252D;
+        border: 1px solid #0B090B;
+        border-top: 0;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+
+    div {
+        height: 50%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        label {
+            font-size: 1.75rem;
+            font-weight: 300;
+        }
+    }
+
+    button {
+        height: 15%;
+        width: 25%;
+        background-color: #B9F3BD;
+        border: 1px solid black;
+    }
+  }
+}
